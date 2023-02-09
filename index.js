@@ -18,5 +18,7 @@ btn.addEventListener("click", function() {
     result2.textContent = `${baseValue} Liters = ${baseValue * literToGallon} Gallon`
 
     result3.textContent = `${baseValue} Kilo = ${baseValue * kiloToPounds} Pounds`
+
+    input.value = ""
 })
 
