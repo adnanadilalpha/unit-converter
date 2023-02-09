@@ -31,7 +31,6 @@ body {
 
 .h2{
     background: none;
-    input-security: none;
     width: 118px;
     height: 83px;
     margin: 30px 216px 12px 216px;
@@ -104,3 +103,15 @@ h3 {
     text-align: center;
     color: #FFFFFF;
 }
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+
+input:focus {outline-style: none;}
